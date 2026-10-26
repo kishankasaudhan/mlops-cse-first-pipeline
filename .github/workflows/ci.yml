@@ -45,5 +45,7 @@ jobs:
           python -m pytest
 
       #Step 5: Build Docker image
+      
       - name: Build Docker image
-        run: docker build -t iris-ml-api:#{{github.sha }}
+        run: docker build -t iris-ml-api:${{ github.sha }} .
+
