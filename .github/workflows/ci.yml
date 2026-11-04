@@ -64,7 +64,7 @@ jobs:
 
       # Enable Docker Buildkit Functionality
       - name: Setup Docker Buildx
-        uses: doceker/setup-buildx-action@v3
+        uses: docker/setup-buildx-action@v3
       
       # Authenticate with GHCR
       - name: Login to GHCR
